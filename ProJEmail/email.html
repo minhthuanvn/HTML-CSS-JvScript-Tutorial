@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <button class="imgHelp" onclick ="clickHelp()">Help</button>
+    <div id="main">
+        <form action="status.html" method="POST">       
+        <h2>Compose email message        </h2>
+
+            <div class ="row">
+                <div class ="col-md-4">To:</div>
+                <div class ="col-md-8"><input type ="text" class="EmailEditor" name = "to"></div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-4">From:</div>
+                <div class ="col-md-8"><input type ="text" class="EmailEditor" name = "from"></div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-4">Cc:</div>
+                <div class ="col-md-8"><input type ="text" class="EmailEditor" name = "from"></div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-4">Subject:</div>
+                <div class ="col-md-8"><input type ="text" class="EmailEditor" name = "subject"></div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-4">Message:</div>
+                <div class ="col-md-8"><textarea class="EmailEditor" name = "message"></textarea></div>
+            </div>
+            <div class ="row">
+                <div class ="col-md-4"></div>
+                <div class ="col-md-8"> 
+                    <button>Send</button>
+                    <button>Cancel</button>
+            </div>                                   
+    </div>
+    <div id="help">
+        <h2>-: Email Editor Help :-</h2>
+        <ul>
+            <li>ABC</li>
+            <li>ABC</li>
+            <li>ABC</li>
+        </ul>
+        <div class="Close" onclick="closeHelp()">Close</div>
+    </div>
+        </form>
+    <script type="text/javascript">
+        function clickHelp(){
+            document.getElementById('help').style.display='block';
+            document.getElementById('main').style.display='none';
+        }
+        function closeHelp(){
+            document.getElementById('help').style.display='none';
+            document.getElementById('main').style.display='block';
+        }
+
+        
+    </script>
+</body>
+
+</html>
