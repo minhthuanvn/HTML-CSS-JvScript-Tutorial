@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    
+    <style type="text/css">
+        h1{
+            text-align: center;
+        }
+        body{
+    background-color: #7e9bc9 ;
+}
+.content{
+    display: block;
+    width: 100%;
+    
+}
+.child{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+select, input{
+    font-size: 16px;
+}
+label{
+    font-size: 20px;
+    margin-right: 20px;
+    width: 25%;
+
+}
+.menu-item{
+    width: 150px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: red;
+    background-color: rgb(235, 183, 164);
+}   
+
+
+</style>
+
+</head>
+<body>
+    <hr>
+    <h1>Reservation Form</h1>
+    <hr>
+    <div class ="content">
+        <form method = "POST">
+        <div class="child">
+            <label>Name: </label>
+            <input type="text" name="name" size="50px">
+        </div>
+        <div class="child">
+            <label>Select City: </label>
+            <select name="city">
+                <option>Select...</option>
+                <option value="hanoi">HaNoi</option>
+                <option value="hochiminh">Ho Chi Minh</option>
+                <option value="cantho">Can Tho</option>
+            </select>
+        </div>
+        <div class="child">
+            <label>Arrival Date(MM/dd/yyyy): </label>
+            <input type="date" name="arrival" size="30px">
+        </div>
+        <div class="child">
+            <label>Departure Date(MM/dd/yyyy): </label>
+            <input type="date" name="departure" size="30px">
+        </div>
+        <div class="child">
+            <label>Number Of Room(s): </label>
+            <input type="number" name="NOFR" size="20px">
+        </div>
+        <div class="child">
+            <label>Number OF Person(s): </label>
+            <input type="number" name="NOPS" size="20px">
+        </div>
+        <label></label>
+        <input class="menu-item" type="submit" value="Submit">
+        <input class="menu-item" type="reset" value="Clear Data">
+        <input class="menu-item" type="button" value="Back">
+
+          
+    </div>
+</form>
+      
+</body>
+</html>

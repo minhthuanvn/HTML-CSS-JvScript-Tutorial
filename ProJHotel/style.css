@@ -1,0 +1,12 @@
+body{
+    background-color: #7e9bc9 ;
+}
+.menu{
+    display: block;
+    width: 100%;
+    
+}
+
+.menu-item{
+    width: 250px;
+}
